@@ -59,6 +59,17 @@ graph TD
 | Authentication | Flask-Login            |
 | Date Handling  | python-dateutil        |
 
+
+## Screenshots & Features
+
+| Description | Screenshot |
+|-------------|------------|
+| **Admin Upload Page** <br><br> - Simple and intuitive upload interface<br>- Date selector for attendance records<br>- Support for Excel file uploads (.xls and .xlsx)<br>- Clear form layout with labeled fields<br>- Progress feedback for upload status<br>- Secure file handling<br>- User-friendly design with minimal clutter | ![Admin Upload Page](https://github.com/user-attachments/assets/bb488389-2258-4de0-9df8-118fe6f50987) |
+| **Attendance History Page** <br><br> - Comprehensive view of student attendance records<br>- Date range filtering capability<br>- Color-coded status indicators (green for present, red for absent)<br>- Clear enrollment number display<br>- Day-by-day attendance tracking<br>- Easy-to-read table format with fixed headers<br>- Interactive date selection | ![Attendance History Page](https://github.com/user-attachments/assets/c0220d33-6443-4437-8c74-2b5698f0c6c2) |
+| **Absences Report Page** <br><br> - Generates reports of consecutive student absences<br>- Customizable date range selection<br>- Adjustable consecutive days threshold<br>- Displays enrollment number, start date, end date, and total absent days<br>- Downloadable reports in CSV format<br>- Clean, organized tabular view of absence patterns | ![Absences Report Page](https://github.com/user-attachments/assets/e686a0e1-51bf-44d2-a523-f50daa7f2502) |
+
+
+
 ##  Installation
 
 1. Clone the repository:
