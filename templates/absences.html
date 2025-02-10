@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="absences-container">
+    <h2>Consecutive Absences Report</h2>
+    <div class="filter-section">
+        <div class="form-group">
+            <label for="absenceStartDate">From:</label>
+            <input type="date" id="absenceStartDate">
+        </div>
+        <div class="form-group">
+            <label for="absenceEndDate">To:</label>
+            <input type="date" id="absenceEndDate">
+        </div>
+        <div class="form-group">
+            <label for="consecutiveDays">Consecutive Days:</label>
+            <input type="number" id="consecutiveDays" value="3" min="1">
+        </div>
+        <button onclick="fetchAbsences()" class="btn btn-primary">Generate Report</button>
+        <button onclick="downloadReport()" class="btn btn-secondary">Download Report</button>
+    </div>
+    <div class="table-container">
+        <table id="absencesTable">
+            <thead>
+                <tr>
+                    <th>Enrollment</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Days Absent</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/absences.js') }}"></script>
+{% endblock %}

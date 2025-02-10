@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="history-container">
+    <h2>Attendance History</h2>
+    <div class="filter-section">
+        <div class="form-group">
+            <label for="startDate">From:</label>
+            <input type="date" id="startDate">
+        </div>
+        <div class="form-group">
+            <label for="endDate">To:</label>
+            <input type="date" id="endDate">
+        </div>
+        <button onclick="fetchHistory()" class="btn btn-primary">View</button>
+    </div>
+    <div class="table-container">
+        <table id="historyTable">
+            <thead>
+                <tr>
+                    <th>Enrollment</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/history.js') }}"></script>
+{% endblock %}
