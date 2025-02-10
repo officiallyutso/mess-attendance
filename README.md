@@ -1,4 +1,5 @@
 # Mess Attendance System 
+## Rajendra Bhawan - IIT ROORKEE
 
 A comprehensive web-based system for managing and analyzing student mess attendance records. The system processes Excel-based attendance data, tracks patterns, and generates detailed reports for consecutive absences.
 
@@ -197,4 +198,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 Utso Sarkar
+(Technical Secretary)
 Email: utso_s@ma.iitr.ac.in
